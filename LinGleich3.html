@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinGleichrechnen</title>
+  
+
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Lineare Gleichungen mit einer Variablen (Unbekannten)</p>
+  
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+  
+    <p class = "Aufgabe" ><span style = "background-color:white;">Anwendungs-, Text-, Sachaufgaben:</span></p>
+
+<!--//Aufgabe 52-->
+
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 52</p>
+  <pre><p class = "Aufgabe" ><strong>Welche Zahl muss man zu 87,3 addieren, damit man 102,4 erhält?</strong> Die Zahl ist: 
+    
+Ihr Ergebnis: <input type="text" id="Eintrag52" maxlength="4" size="1" style= background-color:yellow ></input> <button id="Pruef52" onclick="Aufgabe52()">Prüfen</button></p></pre> 
+     
+                      <script>
+                        function Aufgabe52() { 
+                                                
+                          if (Eintrag52.value=="15,1") {alert("Richtig"); document.getElementById("Pruef52").disabled= true;
+                          }  
+                           
+                          else if (Eintrag52.value!=="15,1" && Eintrag52.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag52").value="15,1"; window.open('LinGleich_Aufgabe52.html');           
+                          document.getElementById("Pruef52").disabled= true;}
+                               
+                          else if (Eintrag33.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+  <!--//Aufgabe 53-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 53</p>
+  <pre><p class="Aufgabe" style="font-weight:bold">                             2                              1             
+Welche Zahl muss man von 53 --- subtrahieren, damit man 17 --- erhält?   <button  onclick="window.open('LinGleich_Aufgabe53.html');" >Lösung</button> 
+                             3                              6  </p></pre>                    
+   
+
+  <!--//Aufgabe 54-->
+   
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 54</p>
+  <pre><p class = "Aufgabe" ><strong>Welche Zahl muss mit 9,7 multipliziert werden, damit man 652,325 erhält?</strong>  Die Zahl ist: 
+    
+Ihr Ergebnis: <input type="text" id="Eintrag54" maxlength="5" size="2" style= background-color:yellow ></input> <button id="Pruef54" onclick="Aufgabe54()">Prüfen</button></p></pre> 
+       
+     <script>
+                        function Aufgabe54() { 
+                                                
+                          if (Eintrag54.value=="67,25") {alert("Richtig"); document.getElementById("Pruef54").disabled= true;
+                          }  
+                           
+                          else if (Eintrag54.value!=="67,25" && Eintrag54.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag54").value="67,25"; window.open('LinGleich_Aufgabe54.html');           
+                          document.getElementById("Pruef54").disabled= true;}
+                               
+                          else if (Eintrag54.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+  <!--//Aufgabe 55-->
+
+   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 55</p>
+  <pre><p class="Aufgabe" style="font-weight:bold">                   5
+Addiert man zu 33 --- eine Zahl, so erhält man dasselbe wie bei der Subtraktion
+                   8                                                      
+                          7               
+der gleichen Zahl von 55 ---. Um welche Zahl handelt es sich?   <button  onclick="window.open('LinGleich_Aufgabe55.html');" >Lösung</button>  
+                          8</p></pre>
+  
+  <!--//Aufgabe 56-->
+  
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 56</p>
+  <pre><p class = "Aufgabe" ><strong>Der dritte Teil vom Zwanzigfachen einer Zahl ist 500. Bestimmen Sie die Zahl. </strong>
+
+Die Zahl ist: Ihr Ergebnis: <input type="text" id="Eintrag56" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef56" onclick="Aufgabe56()">Prüfen</button></p></pre>
+  
+
+                    <script>
+                        function Aufgabe56() { 
+                                                
+                          if (Eintrag56.value=="75") {alert("Richtig"); document.getElementById("Pruef56").disabled= true;
+                          }  
+                           
+                          else if (Eintrag56.value!=="75" && Eintrag56.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag56").value="75";window.open('LinGleich_Aufgabe56.html');            
+                          document.getElementById("Pruef56").disabled= true;}
+                               
+                          else if (Eintrag56.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 57-->
+
+   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 57</p>
+  <pre><p class="Aufgabe" style="font-weight:bold">Vermehrt man das Dreifache einer Zahl um 4,2, so erhält man ebensoviel wie
+bei der Verminderung des Vierfachen der Zahl um 0,2. Bestimmen Sie die Zahl.    
+
+<button  onclick="window.open('LinGleich_Aufgabe57.html');" >Lösung</button></p></pre>
+
+  <!--//Aufgabe 58-->
+  
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 58</p>
+  <pre><p class = "Aufgabe" ><strong>Eine Zahl, die man verdoppelt und sie dann um 13 vermindert, ist genauso  
+groß, wie das Fünffache dieser Zahl, vermindert um 55. Bestimmen Sie die Zahl.   </strong> 
+
+Die Zahl ist: Ihr Ergebnis: <input type="text" id="Eintrag58" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef58" onclick="Aufgabe58()">Prüfen</button></p></pre>
+
+                    <script>
+                        function Aufgabe58() { 
+                                                
+                          if (Eintrag58.value=="14") {alert("Richtig"); document.getElementById("Pruef58").disabled= true;
+                          }  
+                           
+                          else if (Eintrag58.value!=="14" && Eintrag58.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag58").value="14";window.open('LinGleich_Aufgabe58.html');            
+                          document.getElementById("Pruef58").disabled= true;}
+                               
+                          else if (Eintrag58.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 59-->
+
+   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 59</p>
+  <pre><p class="Aufgabe" style="font-weight:bold">Die Summe dreier Zahlen beträgt 40. Die zweite Zahl ist um 3 größer als die erste, 
+die dritte ist um 8 kleiner als die erste. Bestimmen Sie die erste Zahl.       
+   
+<button  onclick="window.open('LinGleich_Aufgabe59.html');" >Lösung</button></p></pre>                  
+                      
+    <!--//Aufgabe 60-->
+  
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 60</p>
+  <pre><p class = "Aufgabe" ><strong>Die Summe dreier aufeinanderfolgender Zahlen beträgt 45. 
+Bestimmen Sie die dritte Zahl.</strong>
+
+Die dritte Zahl ist: Ihr Ergebnis: <input type="text" id="Eintrag60" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef60" onclick="Aufgabe60()">Prüfen</button></p></pre>
+  
+                    <script>
+                        function Aufgabe60() { 
+                                                
+                          if (Eintrag60.value=="16") {alert("Richtig"); document.getElementById("Pruef60").disabled= true;
+                          }  
+                           
+                          else if (Eintrag60.value!=="16" && Eintrag60.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag60").value="16";window.open('LinGleich_Aufgabe60.html');
+                          document.getElementById("Pruef60").disabled= true;}                               
+                          else if (Eintrag60.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 61-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 61</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Zwei Strecken sind zusammen 24 cm lang. 
+Die eine ist doppelt so lang wie die andere. 
+Wie lang ist die kürzere Strecke in cm?   
+
+<button  onclick="window.open('LinGleich_Aufgabe61.html');" >Lösung</button> </p></pre>
+
+          
+    <!--//Aufgabe 62-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 62</p>
+ <pre><p class = "Aufgabe" ><strong>Ein Rechteck hat einen Umfang von 36 cm, und die eine Seite ist 3 cm länger als die andere. 
+Wie lang ist die längere Seite in cm?</strong> Die längere Seite ist <input type="text" id="Eintrag62" maxlength="4" size="1" style= background-color:yellow ></input> cm lang. 
+
+Ihr Ergebnis: <button id="Pruef62" onclick="Aufgabe62()">Prüfen</button></p></pre> 
+    
+                    <script>
+                        function Aufgabe62() { 
+                                                
+                          if (Eintrag62.value=="10,5") {alert("Richtig"); document.getElementById("Pruef62").disabled= true;
+                          }  
+                           
+                          else if (Eintrag62.value!=="10,5" && Eintrag62.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag62").value="10,5";window.open('LinGleich_Aufgabe62.html');            
+                          document.getElementById("Pruef62").disabled= true;}                               
+                          else if (Eintrag62.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 63-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 63</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">In einem Betrieb sind 14 Auszubildende. 
+Es sind 2,5 mal soviel Mädchen wie Jungen. 
+Wie viel Jungen sind es?                                                                      
+
+<button  onclick="window.open('LinGleich_Aufgabe63.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 64-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 64</p>
+      <pre><p class = "Aufgabe" ><strong>A hat 447 €. B hat 521 €. Wie viel € muss A an B abgeben, damit der 10 mal soviel wie A hat? 
+Er muss <input type="text" id="Eintrag64" maxlength="3" size="1" style= background-color:yellow ></input> € abgeben.</strong>
+
+Ihr Ergebnis: <button id="Pruef64" onclick="Aufgabe64()">Prüfen</button></p></pre>    
+    
+
+  
+                    <script>
+                        function Aufgabe64() { 
+                                                
+                          if (Eintrag64.value=="359") {alert("Richtig"); document.getElementById("Pruef64").disabled= true;
+                          }  
+                           
+                          else if (Eintrag64.value!=="359" && Eintrag64.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag64").value="359"; window.open('LinGleich_Aufgabe64.html');           
+                          document.getElementById("Pruef64").disabled= true;}                               
+                          else if (Eintrag64.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 65-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 65</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Ein Unternehmen produziert im 4. Quartal monatlich 17 Maschinen mehr, als im 3. Quartal. 
+Im 2 Halbjahr stellte der Betrieb 291 Maschinen her.            
+Wie viel Maschinen produzierte das Unternehmen monatlich im 3. Quartal?   
+  
+<button  onclick="window.open('LinGleich_Aufgabe65.html');" >Lösung</button></p></pre>
+
+        <!--//Aufgabe 66-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 66</p>
+  <pre><p class = "Aufgabe" ><strong>Der Gewinn einer Lotterie wird nach Vereinbarung unter 3 Spieler verteilt.
+A erhält ein Drittel + 1200 €, B ein Viertel + 1300 €, C ein Fünftel + 1400 €.
+a) Wie hoch ist der Gewinn in €? Der Gewinn beträgt <input type="text" id="Eintrag66" maxlength="5" size="2" style= background-color:yellow ></input> €.                                                                
+b) Wie viel € erhält B? </strong>
+
+Ihr Ergebnis: <button id="Pruef66" onclick="Aufgabe66()">Prüfen</button></p></pre>
+  
+                    <script>
+                        function Aufgabe66() { 
+                                                
+                          if (Eintrag66.value=="18000") {alert("Richtig"); document.getElementById("Pruef66").disabled= true;
+                          }  
+                           
+                          else if (Eintrag66.value!=="18000" && Eintrag66.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag66").value="18000 "; window.open('LinGleich_Aufgabe66.html');           
+                          document.getElementById("Pruef66").disabled= true;}                               
+                          else if (Eintrag66.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+    <!--//Aufgabe 67-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 67</p>
+<pre><p class="Aufgabe" style="font-weight:bold">Die Kosten eines Straßenbaus in Höhe von 178 360 €, sollen auf 2 Gemeinden im Verhältnis ihrer Einwohnerzahlen aufgeteilt werden. 
+Die erste Gemeinde hat 2450 Einwohner, die zweite 3920.            
+Wie viel € muss die erste Gemeinde insgesamt bezahlen?   
+
+<button  onclick="window.open('LinGleich_Aufgabe67.html');" >Lösung</button></p></pre>
+ 
+ <!--//Aufgabe 68-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 68</p>
+  <pre><p class = "Aufgabe" ><strong>a) An einer Mauer arbeiten 3 Maurer. 
+Der erste allein schafft die Mauer in 12 Tagen, der zweite in 10 Tagen. 
+Zu dritt brauchen sie 4 Tage. 
+Wie viel Tage braucht der dritte allein?                                                                                             
+b) Wie viel Tage brauchen sie für die Mauer zusammen, wenn der dritte 8 Tage alleine braucht?</strong>
+Sie brauchen zusammen <input type="text" id="Eintrag66" maxlength="4" size="1" style= background-color:yellow ></input>
+
+Ihr Ergebnis: <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre>          
+  
+                    <script>
+                        function Aufgabe68() { 
+                                                
+                          if (Eintrag68.value=="3,24") {alert("Richtig"); document.getElementById("Pruef68").disabled= true;
+                          }  
+                           
+                          else if (Eintrag68.value!=="3,24" && Eintrag68.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag68").value="3,24"; window.open('LinGleich_Aufgabe68.html');
+                          document.getElementById("Pruef68").disabled= true;}                               
+                          else if (Eintrag68.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 69-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 69</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">a) Wie viel Stunden brauchen 3 Pumpen, um einen Behälter von 1152 l zu füllen,                
+   wenn die erste Pumpe 12 l/min, die zweite 17 l/min und die dritte 19 l/min liefert?   
+b) Wie viel Minuten brauchen sie, wenn die zweite 17 Minuten und die dritte 9                
+   Minuten früher als die erste anfängt? 
+   
+   <button  onclick="window.open('LinGleich_Aufgabe69.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 70-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 70</p>
+  <pre><p class = "Aufgabe" ><strong>3 Röhren füllen ein Gefäß in 4 Stunden. 
+Die erste füllt es allein in 15 Stunden, die zweite allein in 20 Stunden. 
+Aus der dritten fließen stündlich 0,5 m³ mehr als aus der zweiten. 
+Wie viel Liter fasst das Gefäß? Das Gefäß fasst <input type="text" id="Eintrag70" maxlength="4" size="1" style= background-color:yellow > </input> l.</strong>  
+                                                          
+Ihr Ergebnis: <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe70() { 
+                                                
+                          if (Eintrag70.value=="6000") {alert("Richtig"); document.getElementById("Pruef70").disabled= true;
+                          }  
+                           
+                          else if (Eintrag70.value!=="6000" && Eintrag70.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag70").value="6000"; window.open('LinGleich_Aufgabe70.html');                                 
+                          document.getElementById("Pruef70").disabled= true;}                               
+                          else if (Eintrag70.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+        <!--//Aufgabe 71-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 71</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Zwei Röhren füllen zusammen einen Behälter in 2 Stunden. 
+Die erste braucht alleine 5 Stunden. 
+Wie viel Stunden braucht die zweite alleine?   <button  onclick="window.open('LinGleich_Aufgabe71.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 72-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 72</p>
+  <pre><p class = "Aufgabe" ><strong>
+Ein Auto fährt von A nach B in 10 Stunden. 
+Ein anderes von B nach A in 15 Stunden. 
+Nach wie viel Stunden begegnen sie sich, wenn sie gleichzeitig abfahren?</strong> Nach <input type="text" id="Eintrag72" maxlength="1" size="1" style= background-color:yellow > </input>Stunden.  
+                                                          
+Ihr Ergebnis: <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe72() { 
+                                                
+                          if (Eintrag72.value=="6") {alert("Richtig"); document.getElementById("Pruef72").disabled= true;
+                          }  
+                           
+                          else if (Eintrag72.value!=="6" && Eintrag72.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag72").value="6"; window.open('LinGleich_Aufgabe72.html');                                 
+                          document.getElementById("Pruef72").disabled= true;}                               
+                          else if (Eintrag72.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 73-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 73</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Von Station A nach Station B fährt ein Personenzug ab, der 3 km in 4 Minuten zurücklegt. 
+Von Station B geht 7 Minuten später ein Schnellzug, der für 6 km 5 Minuten braucht. 
+Die beiden Züge treffen sich in der Mitte der Strecke. 
+Wie viel km sind es von A nach B?  <button  onclick="window.open('LinGleich_Aufgabe73.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 74-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 74</p>
+  <pre><p class = "Aufgabe" ><strong>Um 7.20 Uhr fährt ein Personenzug vom Bahnhof ab. 
+Um 8.40 Uhr folgt ihm vom selben Bahnhof ein Schnellzug mit einer um 18 km/h höheren Geschwindigkeit.
+Er holt den Personenzug um 12.00 Uhr ein.            
+a) Welche Geschwindigkeit hat der Personenzug?      
+b) Wie weit ist der Einholpunkt vom Ausgangsbahnhof entfernt? </strong> <input type="text" id="Eintrag74" maxlength="3" size="1" style= background-color:yellow > </input>km  
+                                                          
+Ihr Ergebnis: <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe74() { 
+                                                
+                          if (Eintrag74.value=="210") {alert("Richtig"); document.getElementById("Pruef74").disabled= true;
+                          }  
+                           
+                          else if (Eintrag74.value!=="210" && Eintrag74.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag74").value="210"; window.open('LinGleich_Aufgabe74.html');                                 
+                          document.getElementById("Pruef74").disabled= true;}                               
+                          else if (Eintrag74.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 75-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 75</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Die Entfernung von A nach B beträgt 300 km. 
+Von A fährt um 6 Uhr ein Güterzug ab, der in B um 18 Uhr ankommt. 
+Um 10 Uhr verlässt A ein Personenzug in Richtung B, der 1,8 mal schneller als der Güterzug ist.            
+a) Um wie viel Uhr holt der Personenzug den Güterzug ein?   
+b) Um wie viel Uhr kommt der Personenzug in B an?    <button  onclick="window.open('LinGleich_Aufgabe75.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 76-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 76</p>
+  <pre><p class = "Aufgabe" ><strong>Ein Radfahrer und ein Fußgänger bewegen sich gleichzeitig von A nach B, der eine legt in der Stunde 5 km, der andere 15 km zurück. 
+Der Radfahrer hält sich eine Stunde in B auf und trifft auf dem Rückweg den Fußgänger 30 km von B entfernt. 
+Wie viel Kilometer ist A von B entfernt?</strong> A ist von B <input type="text" id="Eintrag76" maxlength="4" size="1" style= background-color:yellow ></input> km entfernt. 
+                                                          
+Ihr Ergebnis: <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe76() { 
+                                                
+                          if (Eintrag76.value=="67,5") {alert("Richtig"); document.getElementById("Pruef76").disabled= true;
+                          }  
+                           
+                          else if (Eintrag76.value!=="67,5" && Eintrag76.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag76").value="67,5"; window.open('LinGleich_Aufgabe76.html');                                 
+                          document.getElementById("Pruef76").disabled= true;}                               
+                          else if (Eintrag76.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 77-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 77</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Ein Güterzug, der um 7 Uhr von A abfährt und in der Stunde 22,5 km zurücklegt, 
+kommt gleichzeitig mit einem Eilzug, der um 12 Uhr mit einer Geschwindigkeit von 60 km/h in A abgefahren ist, in B an. 
+Wie viel Kilometer ist A von B entfernt?  <button  onclick="window.open('LinGleich_Aufgabe77.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 78-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 78</p>
+  <pre><p class = "Aufgabe" ><strong>Ein gleichschenkliges Dreieck hat einen Umfang von 41 cm. 
+Wie lang ist ein Schenkel in cm, wenn er 4 cm länger als die Grundlinie ist?</strong> Der Schenkel ist <input type="text" id="Eintrag78" maxlength="2" size="1" style= background-color:yellow ></input> cm lang. 
+                                                          
+Ihr Ergebnis: <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe78() { 
+                                                
+                          if (Eintrag78.value=="15") {alert("Richtig"); document.getElementById("Pruef78").disabled= true;
+                          }  
+                           
+                          else if (Eintrag78.value!=="15" && Eintrag78.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag78").value="15"; window.open('LinGleich_Aufgabe78.html');                                 
+                          document.getElementById("Pruef78").disabled= true;}                               
+                          else if (Eintrag78.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                
+              
+<!--//Aufgabe 79-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 79</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Ein Rechteck, das einen Umfang von 66 cm hat, ist doppelt so lang wie breit. 
+Berechnen Sie die Länge des Rechtecks in cm. <button  onclick="window.open('LinGleich_Aufgabe79.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 80-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 80</p>
+  <pre><p class = "Aufgabe" ><strong>Die Seiten eines Rechtecks verhalten sich wie 6:7. 
+Verlängert man die größere um 2 cm und verkürzt die kleinere um 2 cm, so nimmt die Fläche um 10 cm² ab.
+Wie groß ist die kleinere Seite in cm?</strong> Sie ist <input type="text" id="Eintrag80" maxlength="2" size="1" style= background-color:yellow ></input> cm groß. 
+                                                          
+Ihr Ergebnis: <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe80() { 
+                                                
+                          if (Eintrag80.value=="18") {alert("Richtig"); document.getElementById("Pruef80").disabled= true;
+                          }  
+                           
+                          else if (Eintrag80.value!=="18" && Eintrag80.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag80").value="18"; window.open('LinGleich_Aufgabe80.html');                                 
+                          document.getElementById("Pruef80").disabled= true;}                               
+                          else if (Eintrag80.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 81-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 81</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Ein Dreieck hat eine Höhe von 18 cm. 
+Verlängert man die dazugehörige Grundlinie um 15 cm und die Höhe um 4 cm, so nimmt die Dreiecksfläche um 194 cm² zu. 
+Wie lang ist die Grundseite in cm? <button  onclick="window.open('LinGleich_Aufgabe81.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 84-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 84</p>
+  <pre><p class = "Aufgabe" ><strong>Ein Trapez hat eine Fläche von 2000 cm² und eine Höhe von 80 cm. 
+Die parallelen Seiten verhalten sich wie 3:5.
+Wie lang ist die kürzere parallele Seite in cm?</strong> Sie ist <input type="text" id="Eintrag84" maxlength="2" size="1" style= background-color:yellow ></input> cm lang. 
+                                                          
+Ihr Ergebnis: <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe82() { 
+                                                
+                          if (Eintrag82.value=="18,75") {alert("Richtig"); document.getElementById("Pruef82").disabled= true;
+                          }  
+                           
+                          else if (Eintrag82.value!=="18,75" && Eintrag82.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag82").value="18,75"; window.open('LinGleich_Aufgabe82.html');                                 
+                          document.getElementById("Pruef82").disabled= true;}                               
+                          else if (Eintrag82.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+        <!--//Aufgabe 83-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 83</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">a) Wie viel kg Wasser muss man aus 48 kg 12% igem Salzwasser verdunsten, damit 20% iges Salzwasser entsteht?                                                                     
+b) Wie viel Salz müsste man hinzufügen, um dasselbe Ergebnis zu erzielen?  <button  onclick="window.open('LinGleich_Aufgabe83.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 84-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 84</p>
+  <pre><p class = "Aufgabe" ><strong>Ein Gefäß enthält 90% igen Alkohol. 
+Entnimmt man 20 Liter und ersetzt sie durch Wasser entsteht 75% iger Alkohol.           
+Wie viel Liter enthielt das Gefäß?</strong> Das Gefäß enthält <input type="text" id="Eintrag84" maxlength="2" size="1" style= background-color:yellow ></input> l. 
+                                                          
+Ihr Ergebnis: <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe84() { 
+                                                
+                          if (Eintrag84.value=="120") {alert("Richtig"); document.getElementById("Pruef84").disabled= true;
+                          }  
+                           
+                          else if (Eintrag84.value!=="120" && Eintrag84.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag84").value="120"; window.open('LinGleich_Aufgabe84.html');                                 
+                          document.getElementById("Pruef84").disabled= true;}                               
+                          else if (Eintrag84.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 85-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 85</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">Aus 58% igem und 84% igem Alkohol sollen 195 l mit 74% igem Alkohol hergestellt werden.            
+Wie viel Liter 58 % igen braucht man? <button  onclick="window.open('LinGleich_Aufgabe85.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 86-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 86</p>
+  <pre><p class = "Aufgabe" ><strong>50 Liter Spiritus von 87 % sollen durch Wasserzusatz auf 80 % verdünnt werden. 
+Wie viel l Wasser braucht man dazu? </strong> Man braucht <input type="text" id="Eintrag86" maxlength="5" size="2" style= background-color:yellow ></input> l Wasser. 
+                                                          
+Ihr Ergebnis: <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe86() { 
+                                                
+                          if (Eintrag86.value=="4,375") {alert("Richtig"); document.getElementById("Pruef86").disabled= true;
+                          }  
+                           
+                          else if (Eintrag86.value!=="4,375" && Eintrag86.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag86").value="4,375"; window.open('LinGleich_Aufgabe86.html');                                 
+                          document.getElementById("Pruef86").disabled= true;}                               
+                          else if (Eintrag86.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 87-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 87</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">70 Liter Spiritus von 80 % sollen durch Wasserentzug auf 90% konzentriert werden. 
+Wie viel l Wasser muss man entziehen? <button  onclick="window.open('LinGleich_Aufgabe87.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 88-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 88</p>
+  <pre><p class = "Aufgabe" ><strong>50 Liter Spiritus zu 80 % werden mit 70 Liter zu 85 % gemischt. 
+Wie viel prozentig ist die Mischung? </strong> Die Mischung ist <input type="text" id="Eintrag88" maxlength="2" size="1" style= background-color:yellow ></input> %ig. 
+                                                          
+Ihr Ergebnis: <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe88() { 
+                                                
+                          if (Eintrag88.value=="83") {alert("Richtig"); document.getElementById("Pruef88").disabled= true;
+                          }  
+                           
+                          else if (Eintrag88.value!=="83" && Eintrag88.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag88").value="83"; window.open('LinGleich_Aufgabe88.html');                                 
+                          document.getElementById("Pruef88").disabled= true;}                               
+                          else if (Eintrag88.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                
+          <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('LinGleich1.html');">zurück...</button>    
+	        <button type="button" class ="Aufgabe" onclick="window.open('LinGleich2.html'); window.close('LinGleich1.html');">mehr...</button>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
