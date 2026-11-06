@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lineare Gleichungen</title>
-  
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>      
 
 </head>
 <body style="background-color: white; margin-top: 1em; ">
@@ -15,12 +18,32 @@
          
         .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {font-size:0.9em; font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;} 
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;}  
+                
+                }
         input {background-color:yellow; }
     </style>
+    
+	<main>
     
 	
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
@@ -30,13 +53,17 @@ Variablen (Unbekannten)</p></pre>
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
   
-    <p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Variable x aus:</span></p>
+    <h2>Bestimmen Sie die Variable x aus:</h2>
+
+<div class="check">
 
      <!--//Aufgabe 1-->
 
-    <pre><b><p class ="Aufgabe" >Aufgabe 1
+    <h2>Aufgabe 1</h2><p>
 
-x + 17 = 21  x = <input type="text" id="Eintrag1" maxlength="1" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p></pre>
+x + 17 = 21</p>  
+
+x = <input type="text" id="Eintrag1" maxlength="1"  ></input> <button type="button" id="Pruef1" onclick="Aufgabe1()">Prüfen</button></p>
     
                      <script>
                         function Aufgabe1() { 
@@ -53,17 +80,24 @@ x + 17 = 21  x = <input type="text" id="Eintrag1" maxlength="1" size="1" style= 
 
 <!--//Aufgabe 2-->
 
-  <pre><p class="Aufgabe" >Aufgabe 2
+  <h2>Aufgabe 2</h2><p>
 
-64 + x = 89  <button type="button" onclick="window.open('LinGleich_Aufgabe2.html');">Lösung</button></p></pre>
+64 + x = 89</p>  
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe2.html');">Lösung</button></p>
 
 <!--//Aufgabe 3-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 3
+  <h2>Aufgabe 3</h2><p>
 
-                     <input type="text" id="Eintrag3" maxlength="1" size="1" style= background-color:yellow >
-14 + 2x = 11 - 7x = -------- </input><button type="button"id="Pruef3" onclick="Aufgabe3()">Prüfen</button>
-                        3</p></pre>
+<pre>                     
+14 + 2x = 11 - 7x
+
+     ?
+x = --- 
+     3</pre>
+
+? = <input type="text" id="Eintrag3" maxlength="1"  ></input>  <button type="button"id="Pruef3" onclick="Aufgabe3()">Prüfen</button>                     
  
                       <script>
                         function Aufgabe3() { 
@@ -80,15 +114,19 @@ x + 17 = 21  x = <input type="text" id="Eintrag1" maxlength="1" size="1" style= 
 
   <!--//Aufgabe 4-->
 
-  <pre><p class="Aufgabe" >Aufgabe 4
+  <h2>Aufgabe 4</h2><p>
 
-5 - x = 2  <button type="button" onclick="window.open('LinGleich_Aufgabe4.html');" >Lösung</button></p></pre>
+5 - x = 2  </p>
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe4.html');" >Lösung</button></p>
 
   <!--//Aufgabe 5-->
    
-  <pre><p class ="Aufgabe" >Aufgabe 5
+  <h2>Aufgabe 5</h2><p>
 
-4x - 13 = 3x  x =  <input type="text" type="button" id="Eintrag5" maxlength="2" size="1" style= background-color:yellow ></input> <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p></pre>
+4x - 13 = 3x<p>  
+
+x = <input type="text" type="button" id="Eintrag5" maxlength="2" > <button id="Pruef5" onclick="Aufgabe5()">Prüfen</button></p>
        
      <script>
                         function Aufgabe5() { 
@@ -105,17 +143,21 @@ x + 17 = 21  x = <input type="text" id="Eintrag1" maxlength="1" size="1" style= 
 
   <!--//Aufgabe 6-->
 
-   <pre><p class="Aufgabe" >Aufgabe 6
+   <h2>Aufgabe 6</h2><p>
 
-ax + b = c - dx <button type="button" onclick="window.open('LinGleich_Aufgabe6.html');" >Lösung</button></p></pre>
+ax + b = c - dx</p> 
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe6.html');" >Lösung</button></p>
   
   <!--//Aufgabe 7-->
   
-  <pre><p class ="Aufgabe" >Aufgabe 7
+ <h2>Aufgabe 7</h2><p>
 
- 2            3          
---- x + 5 =  --- x - 6  x = <input type="text" id="Eintrag7" maxlength="3" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef7" onclick="Aufgabe7()">Prüfen</button>
- 3            4     </p></pre>
+<pre> 2            3          
+--- x + 5 =  --- x - 6  
+ 3            4</pre>     
+
+x = <input type="text" id="Eintrag7" maxlength="3" ></input> <button type="button" id="Pruef7" onclick="Aufgabe7()">Prüfen</button></p>
   
 
                     <script>
@@ -133,17 +175,21 @@ ax + b = c - dx <button type="button" onclick="window.open('LinGleich_Aufgabe6.h
                       
   <!--//Aufgabe 8-->
 
-   <pre><p class="Aufgabe" >Aufgabe 8
+   <h2>Aufgabe 8</h2><p>
 
-9ax - 5a = 6ax + 7a  <button type="button" onclick="window.open('LinGleich_Aufgabe8.html');" >Lösung</button></p></pre>
+9ax - 5a = 6ax + 7a</p> 
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe8.html');" >Lösung</button></p>
 
   <!--//Aufgabe 9-->
   
-  <pre><p class ="Aufgabe" >Aufgabe 9
+ <h2>Aufgabe 9</h2><p>
 
- 5         1     37          
---- x + 4 --- = ----   x = <input type="text" id="Eintrag9" maxlength="1" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef9" onclick="Aufgabe9()">Prüfen</button>
- 7         9      9  </p></pre>
+<pre> 5         1     37          
+--- x + 4 --- = ----   
+ 7         9      9</pre>  
+
+x = <input type="text" id="Eintrag9" maxlength="1" ></input> <button type="button" id="Pruef9" onclick="Aufgabe9()">Prüfen</button></p>
 
                     <script>
                         function Aufgabe9() { 
@@ -160,19 +206,19 @@ ax + b = c - dx <button type="button" onclick="window.open('LinGleich_Aufgabe6.h
 
     <!--//Aufgabe 10-->
 
-   <pre><p class="Aufgabe" >Aufgabe 10
+   <h2>Aufgabe 10</h2><p>
 
-13 - (5x + 2) + (x - 7) = 8x - 20  <button type="button" onclick="window.open('LinGleich_Aufgabe10.html');" >Lösung</button></p></pre>
+13 - (5x + 2) + (x - 7) = 8x - 20</p>  
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe10.html');" >Lösung</button></p>
                       
     <!--//Aufgabe 11-->
   
-  <pre><p class ="Aufgabe" >Aufgabe 11
+  <h2>Aufgabe 11</h2><p>
 
-5(2u - 3) + (4 - u)3 - 2(u + 7) = (2u - 4) + 
-
-+ 2(6 - u)   
+5(2u - 3) + (4 - u)3 - 2(u + 7) = (2u - 4) + 2(6 - u)</p>   
     
-x = <input type="text" id="Eintrag11" maxlength="1" size="1" style= background-color:yellow ></input> <button type="button"id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p></pre>
+x = <input type="text" id="Eintrag11" maxlength="1" ></input> <button type="button"id="Pruef11" onclick="Aufgabe11()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe11() { 
@@ -188,23 +234,21 @@ x = <input type="text" id="Eintrag11" maxlength="1" size="1" style= background-c
 
     <!--//Aufgabe 12-->
 
-    <pre><p class="Aufgabe" >Aufgabe 12
+    <h2>Aufgabe 12</h2><p>
 
-2[18 - 3(7x - 5)] = 3[5x + 2(9 - 4x)]  
+2[18 - 3(7x - 5)] = 3[5x + 2(9 - 4x)]</p>  
 
-<button type="button" onclick="window.open('LinGleich_Aufgabe12.html');" >Lösung</button></p></pre>
+<button type="button" onclick="window.open('LinGleich_Aufgabe12.html');" >Lösung</button></p>
 
-    <p class = "Aufgabe" ><span style = "background-color:white;">Bestimmen Sie die Variable aus:</span></p>    
+    <h2">Bestimmen Sie die Variable aus:</h2>   
         
     <!--//Aufgabe 13-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 13
+    <h2>Aufgabe 13</h2><p>
 
-51a - 2{3x + 5[2a - 3(2x - 7a) + 4x] -  
-  
-3[(5x - 2a) - 2(3x + a)]} = 72a - 3x 
+51a - 2{3x + 5[2a - 3(2x - 7a) + 4x] - 3[(5x - 2a) - 2(3x + a)]} = <br class = "br-desk"> <br class = "br-desk"> <span class= "desktop-plus">=</span> 72a - 3x</p> 
     
-x = <input type="text" id="Eintrag13" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p></pre>
+x = <input type="text" id="Eintrag13" maxlength="3" >   </input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe13() { 
@@ -220,19 +264,19 @@ x = <input type="text" id="Eintrag13" maxlength="3" size="1" style= background-c
 
     <!--//Aufgabe 14-->
 
-    <pre><p class="Aufgabe" >Aufgabe 14
+    <h2>Aufgabe 14</h2><p>
 
-0,3(4 - 5x) - 0,5(6 - 7x) + 0,7(8 - 9x) = 1,1 - 4x
+0,3(4 - 5x) - 0,5(6 - 7x) + 0,7(8 - 9x) = 1,1 - 4x</p>
 
-<button type="button" onclick="window.open('LinGleich_Aufgabe14.html');" >Lösung</button></p></pre>
+<button type="button" onclick="window.open('LinGleich_Aufgabe14.html');" >Lösung</button></p>
 
     <!--//Aufgabe 15-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 15
+    <h2>Aufgabe 15</h2><p>
 
-3(5y - 7a) + 5(3b - 7y) = 7(5b - 3a) 
+3(5y - 7a) + 5(3b - 7y) = 7(5b - 3a)</p> 
 
-y = <input type="text" id="Eintrag15" maxlength="2" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p></pre>
+y = <input type="text" id="Eintrag15" maxlength="2" ></input> <button type="button" id="Pruef15" onclick="Aufgabe15()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe15() { 
@@ -248,19 +292,23 @@ y = <input type="text" id="Eintrag15" maxlength="2" size="1" style= background-c
 
     <!--//Aufgabe 16-->
 
-    <pre><p class="Aufgabe" >Aufgabe 16
+    <h2>Aufgabe 16</h2><p>
 
-a - (a + b)x = (b - a)x - (c + bx)  <button type="button" onclick="window.open('LinGleich_Aufgabe16.html');" >Lösung</button></p></pre>
+a - (a + b)x = (b - a)x - (c + bx)</p>  
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe16.html');" >Lösung</button></p>
 
         <!--//Aufgabe 17-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 17
+    <h2>Aufgabe 17</h2><p>
 
-9[3x - 2(4x + 3) + 7] - 2[5(x + 9) - 6x + 1] = 
+9[3x - 2(4x + 3) + 7] - 2[5(x + 9) - 6x + 1] = (5 - 8x)3 + 2x</p>    
 
-                         <input type="text" id="Eintrag17" maxlength="2" size="1" style= background-color:yellow ></input>
-= (5 - 8x)3 + 2x   x = - ------ <button type="button" id="Pruef17" onclick="Aufgabe17()">Prüfen</button>
-                            3</p></pre>
+<pre>        ?                
+x = - ---- 
+        3</pre>
+
+? = <input type="text" id="Eintrag17" maxlength="2" size="1" style= background-color:yellow ></input>  <button type="button" id="Pruef17" onclick="Aufgabe17()">Prüfen</button>  </p>
 
 
                     <script>
@@ -277,17 +325,19 @@ a - (a + b)x = (b - a)x - (c + bx)  <button type="button" onclick="window.open('
                       
     <!--//Aufgabe 18-->
 
-    <pre><p class="Aufgabe" >Aufgabe 18
+    <h2>Aufgabe 18</h2><p>
 
-17(2 - 3t) - 8(1 - 7t) = 5(t + 12)  <button type="button" onclick="window.open('LinGleich_Aufgabe18.html');" >Lösung</button></p></pre>
+17(2 - 3t) - 8(1 - 7t) = 5(t + 12)</p>  
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe18.html');" >Lösung</button></p>
 
     <!--//Aufgabe 19-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 19
+    <h2>Aufgabe 19</h2><p>
 
-7(2x - 1) - 6(11 - x) = 3(x + 4)  
+7(2x - 1) - 6(11 - x) = 3(x + 4)</p>  
 
-x = <input type="text" id="Eintrag19" maxlength="1" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef19" onclick="Aufgabe19()">Prüfen</button></p></pre>
+x = <input type="text" id="Eintrag19" maxlength="1" ></input> <button type="button" id="Pruef19" onclick="Aufgabe19()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe19() { 
@@ -303,19 +353,23 @@ x = <input type="text" id="Eintrag19" maxlength="1" size="1" style= background-c
 
     <!--//Aufgabe 20-->
 
-    <pre><p class="Aufgabe" >Aufgabe 20
+    <h2>Aufgabe 20</h2><p>
 
-(x - 5)(x - 7) = (x + 4)(x - 9) - 13  <button type="button" onclick="window.open('LinGleich_Aufgabe20.html');" >Lösung</button></p></pre>
+(x - 5)(x - 7) = (x + 4)(x - 9) - 13</p>  
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe20.html');" >Lösung</button></p>
 
     <!--//Aufgabe 21-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 21
+    <h2>Aufgabe 21</h2><p>
 
-(3x - 2)(x + 7) - (4x - 1)(1 + x) = (x - 2)(5 - x)
+(3x - 2)(x + 7) - (4x - 1)(1 + x) = (x - 2)(5 - x)</p>
 
-       1
-x = ------- <button type="button" id="Pruef21" onclick="Aufgabe21()">Prüfen</button>
-     <input type="text" id="Eintrag21" maxlength="1" size="1" style= background-color:yellow ></input> </p></pre>
+<pre>     1
+x = --- 
+     ?</pre>     
+
+? = <input type="text" id="Eintrag21" maxlength="1" ></input> <button type="button" id="Pruef21" onclick="Aufgabe21()">Prüfen</button></p>
     
            
                     <script>
@@ -332,24 +386,23 @@ x = ------- <button type="button" id="Pruef21" onclick="Aufgabe21()">Prüfen</bu
 
     <!--//Aufgabe 22-->
 
-    <pre><p class="Aufgabe" >Aufgabe 22
+    <h2>Aufgabe 22</h2><p>
 
-(x + 4b)(x + 3a + 6b) - 3b(x + 10b) = 
-
-= (x + 6b)(3a + x - 5b) + 4b(a + x + 3b) 
+(x + 4b)(x + 3a + 6b) - 3b(x + 10b) = <br class = "br-desk"> <br class = "br-desk"> <span class= "desktop-plus">=</span>(x + 6b)(3a + x - 5b) + 4b(a + x + 3b)</p> 
         
-<button type="button" onclick="window.open('LinGleich_Aufgabe22.html');" >Lösung</button></p></pre>
+<button type="button" onclick="window.open('LinGleich_Aufgabe22.html');" >Lösung</button></p>
 
     <!--//Aufgabe 23-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 23
+    <h2>Aufgabe 23</h2><p>
 
-(x - a)<sup>2</sup> + (x - b)<sup>2</sup> - (x - a)(x - b) = 
+(x - a)<sup>2</sup> + (x - b)<sup>2</sup> - (x - a)(x - b) = x<sup>2</sup> + a<sup>2</sup> + b<sup>2</sup></p>   
 
-                         ab
-= x<sup>2</sup> + a<sup>2</sup> + b<sup>2</sup>   x = - -------   
-                       <input type="text" id="Eintrag23" maxlength="3" size="1" style= background-color:yellow ></input>
-<button type="button" id="Pruef23" onclick="Aufgabe23()">Prüfen</button></p></pre>
+<pre>        ab 
+x = - -------   
+        ?</pre>
+
+? = <input type="text" id="Eintrag23" maxlength="3" ></input>  <button type="button" id="Pruef23" onclick="Aufgabe23()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe23() { 
@@ -365,16 +418,19 @@ x = ------- <button type="button" id="Pruef21" onclick="Aufgabe21()">Prüfen</bu
 
 <!--//Aufgabe 24-->
 
-    <pre><p class="Aufgabe" >Aufgabe 24
+    <h2>Aufgabe 24</h2><p>
 
-(4t + 3)<sup>2</sup> + (7t - 3)<sup>2</sup> = (8t - 7)<sup>2</sup> + (t + 7)<sup>2</sup>  
+(4t + 3)<sup>2</sup> + (7t - 3)<sup>2</sup> = (8t - 7)<sup>2</sup> + (t + 7)<sup>2</sup></p>  
 
-<button type="button" onclick="window.open('LinGleich_Aufgabe24.html');" >Lösung</button></p></pre>
+<button type="button" onclick="window.open('LinGleich_Aufgabe24.html');" >Lösung</button></p>
 
 <!--//Aufgabe 25-->
 
-    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 25</p>
-  <pre><p class = "Aufgabe" >(x + 2)<sup>2</sup> = (x + 6)(x - 6)   x = <input type="text" id="Eintrag25" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button></p></pre>
+    <h2>Aufgabe 25</h2><p>
+
+(x + 2)<sup>2</sup> = (x + 6)(x - 6)</p>   
+    
+x = <input type="text" id="Eintrag25" maxlength="3" ></input> <button id="Pruef25" onclick="Aufgabe25()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe25() { 
@@ -391,17 +447,19 @@ x = ------- <button type="button" id="Pruef21" onclick="Aufgabe21()">Prüfen</bu
 
     <!--//Aufgabe 26-->
 
-    <pre><p class="Aufgabe" >Aufgabe 26
+    <h2>Aufgabe 26</h2><p>
 
-(x + 2)<sup>2</sup> = (x - 3)<sup>2</sup>  <button type="button" onclick="window.open('LinGleich_Aufgabe26.html');" >Lösung</button></p></pre>
+(x + 2)<sup>2</sup> = (x - 3)<sup>2</sup></p>  
+
+<button type="button" onclick="window.open('LinGleich_Aufgabe26.html');" >Lösung</button></p>
 
 <!--//Aufgabe 27-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 27
+    <h2>Aufgabe 27</h2><p>
 
-(a + x)(b - x) = (a - x)(b + x)  
+(a + x)(b - x) = (a - x)(b + x)  </p>
 
-x = <input type="text" id="Eintrag27" maxlength="1" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef27" onclick="Aufgabe27()">Prüfen</button></p></pre>
+x = <input type="text" id="Eintrag27" maxlength="1"  ></input> <button type="button" id="Pruef27" onclick="Aufgabe27()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe27() { 
@@ -417,21 +475,19 @@ x = <input type="text" id="Eintrag27" maxlength="1" size="1" style= background-c
                      
     <!--//Aufgabe 28-->
 
-    <pre><p class="Aufgabe" >Aufgabe 28
+    <h2>Aufgabe 28</h2><p>
       
-5u(x + 2v) - 4v(2x - 3u) - 3u(2x - u) + 
+5u(x + 2v) - 4v(2x - 3u) - 3u(2x - u) + 4v(3x - 10u - 10v) = -64v<sup>2</sup></p>  
 
-+ 4v(3x - 10u - 10v) = -64v<sup>2</sup>  
-
-<button type="button" onclick="window.open('LinGleich_Aufgabe28.html');" >Lösung</button></p></pre>
+<button type="button" onclick="window.open('LinGleich_Aufgabe28.html');" >Lösung</button></p>
 
 <!--//Aufgabe 29-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 29
+    <h2>Aufgabe 29</h2><p>
 
-(3y - 10)(10 + 3y) - (2y + 3)<sup>2</sup> = 5y<sup>2</sup> - 157  
+(3y - 10)(10 + 3y) - (2y + 3)<sup>2</sup> = 5y<sup>2</sup> - 157</p>  
 
-y = <input type="text" id="Eintrag29" maxlength="1" size="1" style= background-color:yellow ></input> <button type="button" id="Pruef29" onclick="Aufgabe29()">Prüfen</button></p></pre>
+y = <input type="text" id="Eintrag29" maxlength="1" ></input> <button type="button" id="Pruef29" onclick="Aufgabe29()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe29() { 
@@ -447,23 +503,19 @@ y = <input type="text" id="Eintrag29" maxlength="1" size="1" style= background-c
                       
 <!--//Aufgabe 30-->
 
-    <pre><p class="Aufgabe" >Aufgabe 30
+    <h2>Aufgabe 30</h2><p>
 
-(1,2x + 0,56)(0,6x - 0,22) = 
+(1,2x + 0,56)(0,6x - 0,22) = (0,9x + 0,92)(0,8x - 0,46)</p>  
 
-= (0,9x + 0,92)(0,8x - 0,46)  
-
-<button type="button" onclick="window.open('LinGleich_Aufgabe30.html');" >Lösung</button></p></pre>
+<button type="button" onclick="window.open('LinGleich_Aufgabe30.html');" >Lösung</button></p>
 
 <!--//Aufgabe 31-->
 
-    <pre><p class ="Aufgabe" >Aufgabe 31
+    <h2>Aufgabe 31</h2><p>
 
-(3z - 5a)(8z - a) - (4z - 3a)(5z - 7a) - 
+(3z - 5a)(8z - a) - (4z - 3a)(5z - 7a) - (2z - 5a)(2z + a) = 5a<sup>2</sup></p>  
 
-- (2z - 5a)(2z + a) = 5a<sup>2</sup>  
-
-z = <input type="text" id="Eintrag31" maxlength="2" size="1" style= background-color:yellow ></input> <button type="button"id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p></b></pre>
+z = <input type="text" id="Eintrag31" maxlength="2" ></input> <button type="button"id="Pruef31" onclick="Aufgabe31()">Prüfen</button></p>
   
                     <script>
                         function Aufgabe31() { 
@@ -477,7 +529,7 @@ z = <input type="text" id="Eintrag31" maxlength="2" size="1" style= background-c
                          
                       </script>                     
              
-          <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a>     
+          <a href= "index.html" ><p class="Text2" > <span style= "background-color:white;">zurück</span></p></a></div></main>     
 	                  
         <script>
             document.body.addEventListener("input", function(inputEvent) {
