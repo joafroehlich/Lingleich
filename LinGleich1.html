@@ -29,7 +29,15 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
 .br-mobil {
             display: none;}
 .br-desk {
-            display: block;} 
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-plus {
+            display: none;}  
 
 @media screen and (max-width: 576px) {
 
@@ -37,9 +45,19 @@ h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
                 display: block;}
 
             .br-desk {
-                display: none;}  
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
                 
+            .desktop-plus {
+                display: none; }
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
                 }
+
         input {background-color:yellow; }
     </style>
     
@@ -246,7 +264,7 @@ x = <input type="text" id="Eintrag11" maxlength="1" ></input> <button type="butt
 
     <h2>Aufgabe 13</h2><p>
 
-51a - 2{3x + 5[2a - 3(2x - 7a) + 4x] - 3[(5x - 2a) - 2(3x + a)]} = <br class = "br-desk"> <br class = "br-desk"> <span class= "desktop-plus">=</span> 72a - 3x</p> 
+51a - 2{3x + 5[2a - 3(2x - 7a) + 4x] - 3[(5x - 2a) - <br class = "br-mobil"> <span class= "mobile-plus">-</span>2(3x + a)]} = <br class = "br-desk"> <br class = "br-desk"> <span class= "desktop-plus">=</span> 72a - 3x</p> 
     
 x = <input type="text" id="Eintrag13" maxlength="3" >   </input> <button id="Pruef13" onclick="Aufgabe13()">Prüfen</button></p>
   
